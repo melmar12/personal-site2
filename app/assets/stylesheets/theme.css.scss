@@ -1,0 +1,32 @@
+body {
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+@import url(https://fonts.googleapis.com/css?family=Nunito:400,700);
+$head: 'Roboto', sans-serif;
+$body: 'Bunito', sans-serif;
+
+$color1: #93dced;
+$color2: #d3426f;
+$color3: #854d72;
+@mixin rgba-color1($a) {background-color: rgba(147,220,237,$a);}
+@mixin rgba-color2($a) {background-color: rgba(211,66,111,$a);}
+@mixin rgba-color3($a) {background-color: rgba(133,77,114,$a);}
+
+h1, h2 {font-family: $head}
+p {
+	font-family: $body;
+	font-size: 18px;
+}
+
+
+
+
+@mixin flexbox-column {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+

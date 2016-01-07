@@ -1,0 +1,21 @@
+.aboutme {
+	@include flexbox-column;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 50px;
+
+	.selfie {
+		height: 200px;
+		margin-top: -100px;
+		border-radius: 100%;
+	}
+	p {
+		max-width: 800px;
+		color: $color3;
+		text-indent: 30px;
+		line-height: 2;
+	}
+	.skillset img {
+		height: 60px;
+		padding: 10px;
+	}
+}

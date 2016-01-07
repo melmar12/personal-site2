@@ -1,0 +1,29 @@
+.connect {
+	display: flex;
+	width: 100%;
+	background-image: image-url("snow-road.jpg");
+	background-size: cover;
+	background-position: center;
+	a {
+		@include flexbox-column;
+		width: 50%;
+		text-align: center;
+		color: white;
+		padding-bottom: 20px;
+	}
+	#linkedin {@include rgba-color1(.5);}
+	#github {@include rgba-color1(.4);}
+	img {
+		height: 40px;
+		width: 40px;
+		padding: 15px;
+	}
+	#linkedin div, #github div {
+		width: 70px;
+		height: 70px;
+		border: 4px solid white;
+		border-radius: 100%;
+	}
+	#linkedin:hover {background-color: #0077b5;}
+	#github:hover {background-color: #222;}
+}

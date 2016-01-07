@@ -1,1 +1,17 @@
-.project {}
+.project {
+	@include flexbox-column;
+	padding-top: 10px;
+	padding-bottom: 50px;
+	border: 1px solid #eee;
+
+	h1 {
+		@include header;
+		color: $color2;
+	}
+	div {padding-bottom: 20px;}
+	.browser {height: 450px}
+	.iphone {
+		height: 400px;
+		margin-left: -100px;
+	}
+}

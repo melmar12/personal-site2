@@ -1,0 +1,22 @@
+.footer {
+	@include flexbox-column;
+	background-color: $color3;
+	color: rgba(white, .2);
+	font-weight: 300;
+
+	a {color: rgba(white, .2)}
+	a:hover {color: $color1}
+	div {
+		padding: 20px 0 20px 0;
+		width: 800px;
+	}
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+	}
+	#social {border-bottom: 1px solid rgba(black, .1);
+}
+	#blurb {text-align: center}
+
+}

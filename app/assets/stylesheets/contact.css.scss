@@ -1,0 +1,8 @@
+.contact {
+	@include flexbox-column;
+
+	h1 {
+		@include header;
+		color: $color2;
+	}
+}

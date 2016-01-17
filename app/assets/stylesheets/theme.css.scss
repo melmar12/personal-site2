@@ -43,9 +43,8 @@ a:hover {color: $color1}
 }
 
 @mixin header {
-	padding: 20px 0 20px 0;
 	font-weight: 700;
-	font-size: 40px;
+	font-size: 50px;
 }
 @mixin flexbox-column {
 	display: flex;

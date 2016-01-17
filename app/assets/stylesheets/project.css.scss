@@ -4,6 +4,7 @@
 	padding-bottom: 50px;
 	border: 1px solid #eee;
 
+	div {padding-bottom: 25px}
 	h1 {
 		@include header;
 		color: $color2;
@@ -15,9 +16,5 @@
 		height: 400px;
 		margin-left: -100px;
 		margin-bottom: -10px;
-	}
-	.title {
-		color: $color1;
-		padding: 0px;
 	}
 }

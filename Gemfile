@@ -36,11 +36,11 @@ gem "autoprefixer-rails"
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-group :production do
+group :development do
 	gem 'sqlite3'
 end
 
-group :development do
+group :production do
 	gem 'rails_12factor'
 end
 

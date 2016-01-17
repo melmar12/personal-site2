@@ -8,10 +8,16 @@
 		@include header;
 		color: $color2;
 	}
-	div {padding-bottom: 20px;}
-	.browser {height: 450px}
+	.browser {
+		box-shadow: 2px 2px 4px #888888;
+		height: 450px}
 	.iphone {
 		height: 400px;
 		margin-left: -100px;
+		margin-bottom: -10px;
+	}
+	.title {
+		color: $color1;
+		padding: 0px;
 	}
 }

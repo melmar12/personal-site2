@@ -13,6 +13,7 @@ $color3: #854d72;
 @mixin rgba-color1($a) {background-color: rgba(147,220,237,$a);}
 @mixin rgba-color2($a) {background-color: rgba(211,66,111,$a);}
 @mixin rgba-color3($a) {background-color: rgba(133,77,114,$a);}
+$fadeSpeed: 800ms ease;
 
 h1, h2 {font-family: $head}
 p, ul {
@@ -23,6 +24,7 @@ a {
 	text-decoration: none;
 	color: $color2;
 	font-weight: 700;
+	transition: $fadeSpeed;
 }
 a:hover {color: $color1}
 .btn {
@@ -36,6 +38,7 @@ a:hover {color: $color1}
 	font-weight: 700;
 	color: white;
 	font-size: 30px;
+	transition: $fadeSpeed;
 }
 .btn:hover {
 	background-color: white;
@@ -51,4 +54,3 @@ a:hover {color: $color1}
 	align-items: center;
 	flex-direction: column;
 }
-

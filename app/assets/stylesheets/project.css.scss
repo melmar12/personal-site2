@@ -8,7 +8,8 @@
 
 	div {padding-bottom: 25px}
 	h1 {
-		@include header;
+		font-weight: 700;
+		font-size: 50px;
 		color: $color2;
 	}
 	.browser {

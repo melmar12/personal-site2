@@ -1,7 +1,6 @@
 @mixin much-response {
-	p, ul {font-size: 4em}
+	p, ul {font-size: 2.5em}
 	.btn {font-size: 4em}
-	h1 {font-size: 80px}
 
 	.banner{
 		.photo {
@@ -33,6 +32,9 @@
 		}
 	}
 
+	.project {
+		h1 {font-size: 80px}
+	}
 	.connect {
 		display: block;
 		a {

@@ -1,6 +1,7 @@
 @mixin much-response {
 	p, ul {font-size: 2em}
-	.btn {font-size: 6em}
+	.btn {font-size: 4em}
+	h1 {font-size: 3em}
 
 	.banner{
 		.photo {
@@ -20,6 +21,7 @@
 			height: 400px;
 			margin-top: -200px;
 		}
+		p {font-size: 2em}
 		.skillset {
 			display: flex;
 			align-items: center;
@@ -36,7 +38,7 @@
 		display: block;
 		a {
 			width: 100%;
-			font-size: 2em;
+			font-size: 1.5em;
 		}
 		img {
 			height: 80px;
@@ -54,7 +56,7 @@
 			h1 {font-size: 90px}
 		}
 		#section2 {
-			p {font-size: 3.5em;}
+			p {font-size: 4em;}
 		}
 	}
 

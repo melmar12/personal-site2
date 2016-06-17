@@ -1,6 +1,16 @@
 <section class="aboutme">
+
 	<%= image_tag "selfie.jpg", class: "selfie" %>
-	<p>Hi I'm Melissa, a Web Developer currently based in Houston. I'm a student at the University of Houston getting a degree in <a href="http://www.bauer.uh.edu/undergraduate/mis/index.php">Management Information Systems</a> expected to graduate in May of 2017. I'm available for freelance work or a summer 2016 internship, and am willing to relocate.</p>
+
+	<div id="profile-links">
+		<p>	
+			<a href="https://www.linkedin.com/in/melissa-martinez-b3599290"><%= fa_icon "linkedin" %></a> |
+			<a href="https://github.com/melmar12"><%= fa_icon "github-alt" %></a>
+		</p>
+	</div>
+
+	<p>Hi I'm Melissa, a Web Developer currently based in Houston. I'm a student at the University of Houston getting a degree in <a href="http://www.bauer.uh.edu/undergraduate/mis/index.php">Management Information Systems</a> expected to graduate in May of 2017.</p>
+
 	<div class="skillset">
 		<%= image_tag "html5.png" %>
 		<%= image_tag "css3.svg" %>
@@ -13,4 +23,5 @@
 		<%= image_tag "ruby.png" %>
 		<%= image_tag "rails.png" %>
 	</div>	
+
 </section>

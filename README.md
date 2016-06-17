@@ -1,5 +1,10 @@
-# Todo:
-1. mobile responsiveness
-2. create email submission form
-3. redesign projects section
-4. integrate blog
+# My Personal Website
+
+***personal note:***
+before pushing to heroku `rake assets:clean` `rake assets:precompile`
+
+**Todo:**
+* mobile responsiveness
+* create email submission form
+* redesign projects section
+* integrate blog

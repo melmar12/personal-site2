@@ -7,13 +7,15 @@ body {
 $head: 'Roboto', sans-serif;
 $body: 'Nunito', sans-serif;
 
-$color1: #93dced;
-$color2: #d3426f;
-$color3: #854d72;
-@mixin rgba-color1($a) {background-color: rgba(147,220,237,$a);}
-@mixin rgba-color2($a) {background-color: rgba(211,66,111,$a);}
-@mixin rgba-color3($a) {background-color: rgba(133,77,114,$a);}
+$color1: #ff6666; //accent
+$color2: #a4d1e3; // light
+$color3: #203a75; // dark
+@mixin rgba-color1($a) {background-color: rgba(225,102,102,$a);} // accent
+@mixin rgba-color2($a) {background-color: rgba(164,209,227,$a);} // light
+@mixin rgba-color3($a) {background-color: rgba(32,58,117,$a);} // dark
 $fadeSpeed: 800ms ease;
+
+$main-image: image-url("desert-street.jpg");
 
 h1, h2 {font-family: $head}
 p, ul {
@@ -42,7 +44,8 @@ a:hover {color: $color1}
 }
 .btn:hover {
 	background-color: white;
-	color: $color2;
+	color: $color1;
+	border-color: $color1;
 }
 
 @mixin flexbox-column {

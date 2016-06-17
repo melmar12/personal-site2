@@ -1,7 +1,7 @@
 .connect {
 	display: flex;
 	width: 100%;
-	background-image: image-url("snow-road.jpg");
+	background-image: $main-image;
 	background-size: cover;
 	background-position: center;
 	a {

@@ -7,7 +7,7 @@ visit live site [here](http://melissamartinez.me)
 before pushing to heroku `rake assets:clean assets:precompile`
 
 **Todo:**
-* mobile responsiveness
+* ~~mobile responsiveness~~
 * create email submission form
 * redesign projects section
-* integrate blog
+* build/integrate blog

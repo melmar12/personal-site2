@@ -6,12 +6,19 @@ $(function () {
 
 
 	if (!isMobile) {
+
 		$(window).scroll(function () {	
 			var scrollin = $(window).scrollTop();
-			var offSet = (scrollin * -1.2);
+			var offSet;
 
 			if (scrollin < $(".text").height()) {
+				offSet = scrollin * -1.2;
 				$(".photo").css({"margin-top": offSet.toString() + "px"});
+			}
+
+			if (scrollin > $('.banner').height() + $('.aboutme').height() + $('.project').height()) {
+				offSet = (scrollin*0.2 - 100) * -1;
+				$('.connect').css({'background-position': 'top ' + offSet.toString() + 'px center'});
 			}
 		});
 	}

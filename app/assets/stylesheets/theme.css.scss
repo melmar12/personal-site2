@@ -13,7 +13,7 @@ $color3: #660000; // dark
 @mixin rgba-color1($a) {background-color: rgba(51,204,204,$a);} // accent
 @mixin rgba-color2($a) {background-color: rgba(204,102,51,$a);} // light
 @mixin rgba-color3($a) {background-color: rgba(102,0,0,$a);} // dark
-$fadeSpeed: 800ms ease;
+$fadeSpeed: 900ms ease-in-out;
 
 $main-image: image-url("redrock.jpg");
 

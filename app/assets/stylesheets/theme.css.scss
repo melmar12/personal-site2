@@ -1,5 +1,5 @@
 body {
-    margin: 0; 
+    margin: 0;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,700);
@@ -7,15 +7,15 @@ body {
 $head: 'Roboto', sans-serif;
 $body: 'Nunito', sans-serif;
 
-$color1: #ff6666; //accent
-$color2: #a4d1e3; // light
-$color3: #203a75; // dark
-@mixin rgba-color1($a) {background-color: rgba(225,102,102,$a);} // accent
-@mixin rgba-color2($a) {background-color: rgba(164,209,227,$a);} // light
-@mixin rgba-color3($a) {background-color: rgba(32,58,117,$a);} // dark
+$color1: #33cccc; //accent
+$color2: #cc6633; // light
+$color3: #660000; // dark
+@mixin rgba-color1($a) {background-color: rgba(51,204,204,$a);} // accent
+@mixin rgba-color2($a) {background-color: rgba(204,102,51,$a);} // light
+@mixin rgba-color3($a) {background-color: rgba(102,0,0,$a);} // dark
 $fadeSpeed: 800ms ease;
 
-$main-image: image-url("desert-street.jpg");
+$main-image: image-url("redrock.jpg");
 
 h1, h2 {font-family: $head}
 p, ul {

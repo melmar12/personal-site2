@@ -25,10 +25,10 @@
       width: 100%;
       margin-bottom: -4px;
       opacity: .7;
+      transition: $fadeSpeed;
     }
     .item img:hover {
       opacity: 1;
-      transition: $fadeSpeed;
     }
     .item {
       flex-grow: 1;

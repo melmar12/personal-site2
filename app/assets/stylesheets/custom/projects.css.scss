@@ -5,8 +5,11 @@
 }
 .projects {
   box-sizing: border-box;
-  @include flexbox-column;
+  padding-top: 30px;
+  padding-bottom: 100px;
   background-color: rgba(black, .7);
+  @include flexbox-column;
+
   h1 {
     color: white;
     font-size: 30px;
@@ -16,11 +19,10 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-bottom: 40px;
 
     .item img {
       width: 100%;
-      margin-bottom: -5px;
+      margin-bottom: -4px;
       opacity: .8;
     }
     .item {
@@ -35,7 +37,7 @@
         font-size: 20px;
         line-height: 1px;
       }
-      padding: 1px 0px;
+      padding: 0px 0px;
       text-align: center;
       background-color: $color2;
       border: 7px solid rgba(black, .05);

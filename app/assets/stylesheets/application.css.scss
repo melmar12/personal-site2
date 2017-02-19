@@ -15,12 +15,13 @@
  */
 
 @import "theme.css.scss";
-@import "banner.css.scss";
-@import "aboutme.css.scss";
-@import "project.css.scss";
-@import "connect.css.scss";
-@import "contact.css.scss";
 
-@import "footer.css.scss";
+@import "custom/banner.css.scss";
+@import "custom/aboutme.css.scss";
+@import "custom/projects.css.scss";
+@import "custom/connect.css.scss";
+@import "custom/contact.css.scss";
 
-@import "phones.css.scss";
+@import "custom/footer.css.scss";
+
+@import "custom/phones.css.scss";

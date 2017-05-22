@@ -34,3 +34,23 @@
 		margin: 0px;
 	}
 }
+
+@mixin aboutme-mobile {
+	.aboutme {
+		.selfie {
+			height: 400px;
+			width: 400px;
+			margin-top: -200px;
+		}
+		.skillset {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-wrap: wrap;
+			img {
+				height: 140px;
+				padding: 20px;
+			}
+		}
+	}
+}

@@ -28,5 +28,19 @@
 			padding-bottom: 175px;
 		}
 	}
+}
 
+@mixin banner-mobile {
+	.banner{
+		.photo {
+			height: 1000px;
+			background-position: center;
+		}
+		.text {
+			height: 1000px;
+			justify-content: center; // connected to JS function
+			h1{font-size: 7.5em;}
+			h2{font-size: 6em;}
+		}
+	}
 }

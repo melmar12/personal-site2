@@ -28,3 +28,22 @@
 	#linkedin:hover {background-color: #0077b5;}
 	#github:hover {background-color: #222;}
 }
+
+@mixin connect-mobile {
+	.connect {
+		display: block;
+		a {
+			width: 100%;
+			font-size: 54px;
+		}
+		img {
+			height: 80px;
+			width: 80px;
+			padding: 30px;
+		}
+		#linkedin div, #github div {
+			width: 140px;
+			height: 140px;
+		}
+	}
+}

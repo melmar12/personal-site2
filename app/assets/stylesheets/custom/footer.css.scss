@@ -30,3 +30,14 @@ footer {
 		p{font-size: 25px;}
 	}
 }
+
+@mixin footer-mobile {
+	footer {
+		#section1 {
+			h1 {font-size: 90px}
+		}
+		#section2 {
+			p {font-size: 4em;}
+		}
+	}
+}

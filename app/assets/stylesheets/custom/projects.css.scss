@@ -23,7 +23,7 @@
 
     .item img {
       width: 100%;
-      margin-bottom: -4px;
+      margin-bottom: -5px;
       opacity: .7;
       transition: $fadeSpeed;
     }
@@ -51,5 +51,28 @@
 }
 
 @mixin projects-mobile {
-  
+  .projects {
+    h1 {
+      font-size: 70px;
+    }
+    .container {
+      width: 90%;
+      .item img {
+        margin-bottom: -10px;
+      }
+      .item {
+        min-width: 99%;
+        padding-bottom: 60px;
+      }
+      .description {
+        h2 {
+          font-size: 60px;
+        }
+        ---padding: 0px 0px;
+        --text-align: center;
+        --background-color: $color1;
+        --border: 7px solid rgba(black, .05);
+      }
+    }
+  }
 }

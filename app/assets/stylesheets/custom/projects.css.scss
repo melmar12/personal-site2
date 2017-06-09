@@ -26,6 +26,7 @@
       margin-bottom: -5px;
       opacity: .7;
       transition: $fadeSpeed;
+      z-index: 9;
     }
     .item img:hover {
       opacity: 1;
@@ -46,6 +47,7 @@
       text-align: center;
       background-color: $color1;
       border: 7px solid rgba(black, .05);
+      z-index: 10;
     }
   }
 }

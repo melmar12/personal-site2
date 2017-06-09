@@ -2231,27 +2231,30 @@ a:hover {
   margin-top: -100px;
   border-radius: 100%;
   border: 20px solid white;
+  background-color: #afd6f4;
   background-image: url(/assets/selfie-7087b8b22978ed7b0cc6d5b213761c370fcac5ef659cc368518e4336b4b3136e.jpg);
   background-size: cover;
   background-position: center;
+  -webkit-transition: 900ms ease-in-out;
+  transition: 900ms ease-in-out;
 }
-/* line 17, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+/* line 19, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
 .aboutme .selfie:hover {
   background-image: url(/assets/selfie-2-f515e8604cd087a15f7344ae85ec8240845bbefc381c5a9f072f2f7878dd7f32.jpg);
 }
-/* line 20, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+/* line 22, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
 .aboutme p {
   max-width: 800px;
   color: #660000;
   text-indent: 30px;
   line-height: 2;
 }
-/* line 26, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+/* line 28, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
 .aboutme .skillset img {
   height: 60px;
   padding: 10px;
 }
-/* line 30, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+/* line 32, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
 .aboutme #profile-links p {
   text-indent: 0px;
   margin: 0px;
@@ -2309,14 +2312,14 @@ a:hover {
 /* line 24, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
 .projects .container .item img {
   width: 100%;
-  margin-bottom: -4px;
+  margin-bottom: -5px;
   opacity: .7;
-}
-/* line 29, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
-.projects .container .item img:hover {
-  opacity: 1;
   -webkit-transition: 900ms ease-in-out;
   transition: 900ms ease-in-out;
+}
+/* line 30, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
+.projects .container .item img:hover {
+  opacity: 1;
 }
 /* line 33, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
 .projects .container .item {
@@ -2464,22 +2467,22 @@ footer #section2 p {
 /* ~******~ Media Queries ~******~ */
 /* ----------- iPhone 6 ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 2, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 58, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
   p, ul {
     font-size: 2.5em;
   }
 
-  /* line 3, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 59, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
   .btn {
     font-size: 4em;
   }
 
-  /* line 6, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 35, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/banner.css.scss */
   .banner .photo {
     height: 1000px;
     background-position: center;
   }
-  /* line 10, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 39, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/banner.css.scss */
   .banner .text {
     height: 1000px;
     -webkit-box-pack: center;
@@ -2487,21 +2490,22 @@ footer #section2 p {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  /* line 13, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 42, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/banner.css.scss */
   .banner .text h1 {
     font-size: 7.5em;
   }
-  /* line 14, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 43, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/banner.css.scss */
   .banner .text h2 {
     font-size: 6em;
   }
 
-  /* line 19, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 40, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
   .aboutme .selfie {
     height: 400px;
+    width: 400px;
     margin-top: -200px;
   }
-  /* line 23, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 45, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
   .aboutme .skillset {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2519,43 +2523,64 @@ footer #section2 p {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
   }
-  /* line 28, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 50, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
   .aboutme .skillset img {
     height: 140px;
     padding: 20px;
   }
 
-  /* line 36, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
-  .project h1 {
-    font-size: 80px;
+  /* line 55, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
+  .projects h1 {
+    font-size: 70px;
+  }
+  /* line 58, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
+  .projects .container {
+    width: 90%;
+  }
+  /* line 60, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
+  .projects .container .item img {
+    margin-bottom: -10px;
+  }
+  /* line 63, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
+  .projects .container .item {
+    min-width: 99%;
+    padding-bottom: 60px;
+  }
+  /* line 68, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
+  .projects .container .description h2 {
+    font-size: 60px;
   }
 
-  /* line 39, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 33, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
   .connect {
     display: block;
   }
-  /* line 41, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 35, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
   .connect a {
     width: 100%;
     font-size: 54px;
   }
-  /* line 45, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 39, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
   .connect img {
     height: 80px;
     width: 80px;
     padding: 30px;
   }
-  /* line 50, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 44, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
   .connect #linkedin div, .connect #github div {
     width: 140px;
     height: 140px;
   }
+  /* line 48, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
+  .connect #github {
+    background-color: rgba(51, 204, 204, 0.7);
+  }
 
-  /* line 58, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 37, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/footer.css.scss */
   footer #section1 h1 {
     font-size: 90px;
   }
-  /* line 61, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 40, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/footer.css.scss */
   footer #section2 p {
     font-size: 4em;
   }
@@ -2563,22 +2588,22 @@ footer #section2 p {
 /* ----------- iPhone 6+ ----------- */
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
-  /* line 2, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 58, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
   p, ul {
     font-size: 2.5em;
   }
 
-  /* line 3, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 59, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
   .btn {
     font-size: 4em;
   }
 
-  /* line 6, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 35, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/banner.css.scss */
   .banner .photo {
     height: 1000px;
     background-position: center;
   }
-  /* line 10, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 39, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/banner.css.scss */
   .banner .text {
     height: 1000px;
     -webkit-box-pack: center;
@@ -2586,21 +2611,22 @@ footer #section2 p {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  /* line 13, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 42, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/banner.css.scss */
   .banner .text h1 {
     font-size: 7.5em;
   }
-  /* line 14, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 43, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/banner.css.scss */
   .banner .text h2 {
     font-size: 6em;
   }
 
-  /* line 19, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 40, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
   .aboutme .selfie {
     height: 400px;
+    width: 400px;
     margin-top: -200px;
   }
-  /* line 23, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 45, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
   .aboutme .skillset {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2618,43 +2644,64 @@ footer #section2 p {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
   }
-  /* line 28, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 50, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
   .aboutme .skillset img {
     height: 140px;
     padding: 20px;
   }
 
-  /* line 36, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
-  .project h1 {
-    font-size: 80px;
+  /* line 55, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
+  .projects h1 {
+    font-size: 70px;
+  }
+  /* line 58, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
+  .projects .container {
+    width: 90%;
+  }
+  /* line 60, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
+  .projects .container .item img {
+    margin-bottom: -10px;
+  }
+  /* line 63, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
+  .projects .container .item {
+    min-width: 99%;
+    padding-bottom: 60px;
+  }
+  /* line 68, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
+  .projects .container .description h2 {
+    font-size: 60px;
   }
 
-  /* line 39, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 33, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
   .connect {
     display: block;
   }
-  /* line 41, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 35, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
   .connect a {
     width: 100%;
     font-size: 54px;
   }
-  /* line 45, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 39, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
   .connect img {
     height: 80px;
     width: 80px;
     padding: 30px;
   }
-  /* line 50, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 44, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
   .connect #linkedin div, .connect #github div {
     width: 140px;
     height: 140px;
   }
+  /* line 48, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
+  .connect #github {
+    background-color: rgba(51, 204, 204, 0.7);
+  }
 
-  /* line 58, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 37, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/footer.css.scss */
   footer #section1 h1 {
     font-size: 90px;
   }
-  /* line 61, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 40, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/footer.css.scss */
   footer #section2 p {
     font-size: 4em;
   }
@@ -2662,22 +2709,22 @@ footer #section2 p {
 /* ----------- iPhone 5 and 5S ----------- */
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 2, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 58, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
   p, ul {
     font-size: 2.5em;
   }
 
-  /* line 3, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 59, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
   .btn {
     font-size: 4em;
   }
 
-  /* line 6, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 35, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/banner.css.scss */
   .banner .photo {
     height: 1000px;
     background-position: center;
   }
-  /* line 10, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 39, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/banner.css.scss */
   .banner .text {
     height: 1000px;
     -webkit-box-pack: center;
@@ -2685,21 +2732,22 @@ footer #section2 p {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  /* line 13, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 42, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/banner.css.scss */
   .banner .text h1 {
     font-size: 7.5em;
   }
-  /* line 14, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 43, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/banner.css.scss */
   .banner .text h2 {
     font-size: 6em;
   }
 
-  /* line 19, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 40, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
   .aboutme .selfie {
     height: 400px;
+    width: 400px;
     margin-top: -200px;
   }
-  /* line 23, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 45, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
   .aboutme .skillset {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2717,43 +2765,64 @@ footer #section2 p {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
   }
-  /* line 28, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 50, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
   .aboutme .skillset img {
     height: 140px;
     padding: 20px;
   }
 
-  /* line 36, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
-  .project h1 {
-    font-size: 80px;
+  /* line 55, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
+  .projects h1 {
+    font-size: 70px;
+  }
+  /* line 58, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
+  .projects .container {
+    width: 90%;
+  }
+  /* line 60, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
+  .projects .container .item img {
+    margin-bottom: -10px;
+  }
+  /* line 63, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
+  .projects .container .item {
+    min-width: 99%;
+    padding-bottom: 60px;
+  }
+  /* line 68, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
+  .projects .container .description h2 {
+    font-size: 60px;
   }
 
-  /* line 39, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 33, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
   .connect {
     display: block;
   }
-  /* line 41, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 35, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
   .connect a {
     width: 100%;
     font-size: 54px;
   }
-  /* line 45, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 39, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
   .connect img {
     height: 80px;
     width: 80px;
     padding: 30px;
   }
-  /* line 50, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 44, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
   .connect #linkedin div, .connect #github div {
     width: 140px;
     height: 140px;
   }
+  /* line 48, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
+  .connect #github {
+    background-color: rgba(51, 204, 204, 0.7);
+  }
 
-  /* line 58, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 37, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/footer.css.scss */
   footer #section1 h1 {
     font-size: 90px;
   }
-  /* line 61, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 40, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/footer.css.scss */
   footer #section2 p {
     font-size: 4em;
   }
@@ -2761,22 +2830,22 @@ footer #section2 p {
 /* ----------- iPhone 4 and 4S ----------- */
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 2, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 58, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
   p, ul {
     font-size: 2.5em;
   }
 
-  /* line 3, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 59, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
   .btn {
     font-size: 4em;
   }
 
-  /* line 6, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 35, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/banner.css.scss */
   .banner .photo {
     height: 1000px;
     background-position: center;
   }
-  /* line 10, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 39, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/banner.css.scss */
   .banner .text {
     height: 1000px;
     -webkit-box-pack: center;
@@ -2784,21 +2853,22 @@ footer #section2 p {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  /* line 13, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 42, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/banner.css.scss */
   .banner .text h1 {
     font-size: 7.5em;
   }
-  /* line 14, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 43, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/banner.css.scss */
   .banner .text h2 {
     font-size: 6em;
   }
 
-  /* line 19, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 40, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
   .aboutme .selfie {
     height: 400px;
+    width: 400px;
     margin-top: -200px;
   }
-  /* line 23, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 45, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
   .aboutme .skillset {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2816,43 +2886,64 @@ footer #section2 p {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
   }
-  /* line 28, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 50, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
   .aboutme .skillset img {
     height: 140px;
     padding: 20px;
   }
 
-  /* line 36, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
-  .project h1 {
-    font-size: 80px;
+  /* line 55, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
+  .projects h1 {
+    font-size: 70px;
+  }
+  /* line 58, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
+  .projects .container {
+    width: 90%;
+  }
+  /* line 60, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
+  .projects .container .item img {
+    margin-bottom: -10px;
+  }
+  /* line 63, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
+  .projects .container .item {
+    min-width: 99%;
+    padding-bottom: 60px;
+  }
+  /* line 68, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
+  .projects .container .description h2 {
+    font-size: 60px;
   }
 
-  /* line 39, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 33, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
   .connect {
     display: block;
   }
-  /* line 41, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 35, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
   .connect a {
     width: 100%;
     font-size: 54px;
   }
-  /* line 45, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 39, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
   .connect img {
     height: 80px;
     width: 80px;
     padding: 30px;
   }
-  /* line 50, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 44, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
   .connect #linkedin div, .connect #github div {
     width: 140px;
     height: 140px;
   }
+  /* line 48, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
+  .connect #github {
+    background-color: rgba(51, 204, 204, 0.7);
+  }
 
-  /* line 58, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 37, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/footer.css.scss */
   footer #section1 h1 {
     font-size: 90px;
   }
-  /* line 61, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 40, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/footer.css.scss */
   footer #section2 p {
     font-size: 4em;
   }
@@ -2860,22 +2951,22 @@ footer #section2 p {
 /* ----------- Galaxy S5 ----------- */
 /* Portrait and Landscape */
 @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
-  /* line 2, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 58, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
   p, ul {
     font-size: 2.5em;
   }
 
-  /* line 3, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 59, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
   .btn {
     font-size: 4em;
   }
 
-  /* line 6, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 35, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/banner.css.scss */
   .banner .photo {
     height: 1000px;
     background-position: center;
   }
-  /* line 10, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 39, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/banner.css.scss */
   .banner .text {
     height: 1000px;
     -webkit-box-pack: center;
@@ -2883,21 +2974,22 @@ footer #section2 p {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  /* line 13, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 42, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/banner.css.scss */
   .banner .text h1 {
     font-size: 7.5em;
   }
-  /* line 14, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 43, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/banner.css.scss */
   .banner .text h2 {
     font-size: 6em;
   }
 
-  /* line 19, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 40, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
   .aboutme .selfie {
     height: 400px;
+    width: 400px;
     margin-top: -200px;
   }
-  /* line 23, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 45, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
   .aboutme .skillset {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2915,43 +3007,64 @@ footer #section2 p {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
   }
-  /* line 28, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 50, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
   .aboutme .skillset img {
     height: 140px;
     padding: 20px;
   }
 
-  /* line 36, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
-  .project h1 {
-    font-size: 80px;
+  /* line 55, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
+  .projects h1 {
+    font-size: 70px;
+  }
+  /* line 58, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
+  .projects .container {
+    width: 90%;
+  }
+  /* line 60, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
+  .projects .container .item img {
+    margin-bottom: -10px;
+  }
+  /* line 63, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
+  .projects .container .item {
+    min-width: 99%;
+    padding-bottom: 60px;
+  }
+  /* line 68, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
+  .projects .container .description h2 {
+    font-size: 60px;
   }
 
-  /* line 39, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 33, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
   .connect {
     display: block;
   }
-  /* line 41, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 35, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
   .connect a {
     width: 100%;
     font-size: 54px;
   }
-  /* line 45, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 39, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
   .connect img {
     height: 80px;
     width: 80px;
     padding: 30px;
   }
-  /* line 50, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 44, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
   .connect #linkedin div, .connect #github div {
     width: 140px;
     height: 140px;
   }
+  /* line 48, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
+  .connect #github {
+    background-color: rgba(51, 204, 204, 0.7);
+  }
 
-  /* line 58, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 37, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/footer.css.scss */
   footer #section1 h1 {
     font-size: 90px;
   }
-  /* line 61, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 40, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/footer.css.scss */
   footer #section2 p {
     font-size: 4em;
   }
@@ -2959,22 +3072,22 @@ footer #section2 p {
 /* ----------- Galaxy S4 ----------- */
 /* Portrait and Landscape */
 @media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
-  /* line 2, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 58, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
   p, ul {
     font-size: 2.5em;
   }
 
-  /* line 3, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 59, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
   .btn {
     font-size: 4em;
   }
 
-  /* line 6, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 35, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/banner.css.scss */
   .banner .photo {
     height: 1000px;
     background-position: center;
   }
-  /* line 10, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 39, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/banner.css.scss */
   .banner .text {
     height: 1000px;
     -webkit-box-pack: center;
@@ -2982,21 +3095,22 @@ footer #section2 p {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  /* line 13, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 42, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/banner.css.scss */
   .banner .text h1 {
     font-size: 7.5em;
   }
-  /* line 14, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 43, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/banner.css.scss */
   .banner .text h2 {
     font-size: 6em;
   }
 
-  /* line 19, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 40, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
   .aboutme .selfie {
     height: 400px;
+    width: 400px;
     margin-top: -200px;
   }
-  /* line 23, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 45, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
   .aboutme .skillset {
     display: -webkit-box;
     display: -webkit-flex;
@@ -3014,43 +3128,64 @@ footer #section2 p {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
   }
-  /* line 28, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 50, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
   .aboutme .skillset img {
     height: 140px;
     padding: 20px;
   }
 
-  /* line 36, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
-  .project h1 {
-    font-size: 80px;
+  /* line 55, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
+  .projects h1 {
+    font-size: 70px;
+  }
+  /* line 58, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
+  .projects .container {
+    width: 90%;
+  }
+  /* line 60, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
+  .projects .container .item img {
+    margin-bottom: -10px;
+  }
+  /* line 63, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
+  .projects .container .item {
+    min-width: 99%;
+    padding-bottom: 60px;
+  }
+  /* line 68, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
+  .projects .container .description h2 {
+    font-size: 60px;
   }
 
-  /* line 39, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 33, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
   .connect {
     display: block;
   }
-  /* line 41, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 35, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
   .connect a {
     width: 100%;
     font-size: 54px;
   }
-  /* line 45, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 39, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
   .connect img {
     height: 80px;
     width: 80px;
     padding: 30px;
   }
-  /* line 50, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 44, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
   .connect #linkedin div, .connect #github div {
     width: 140px;
     height: 140px;
   }
+  /* line 48, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
+  .connect #github {
+    background-color: rgba(51, 204, 204, 0.7);
+  }
 
-  /* line 58, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 37, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/footer.css.scss */
   footer #section1 h1 {
     font-size: 90px;
   }
-  /* line 61, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 40, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/footer.css.scss */
   footer #section2 p {
     font-size: 4em;
   }
@@ -3058,22 +3193,22 @@ footer #section2 p {
 /* ----------- Galaxy S3 ----------- */
 /* Portrait and Landscape */
 @media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) {
-  /* line 2, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 58, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
   p, ul {
     font-size: 2.5em;
   }
 
-  /* line 3, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 59, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
   .btn {
     font-size: 4em;
   }
 
-  /* line 6, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 35, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/banner.css.scss */
   .banner .photo {
     height: 1000px;
     background-position: center;
   }
-  /* line 10, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 39, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/banner.css.scss */
   .banner .text {
     height: 1000px;
     -webkit-box-pack: center;
@@ -3081,21 +3216,22 @@ footer #section2 p {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  /* line 13, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 42, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/banner.css.scss */
   .banner .text h1 {
     font-size: 7.5em;
   }
-  /* line 14, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 43, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/banner.css.scss */
   .banner .text h2 {
     font-size: 6em;
   }
 
-  /* line 19, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 40, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
   .aboutme .selfie {
     height: 400px;
+    width: 400px;
     margin-top: -200px;
   }
-  /* line 23, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 45, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
   .aboutme .skillset {
     display: -webkit-box;
     display: -webkit-flex;
@@ -3113,43 +3249,64 @@ footer #section2 p {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
   }
-  /* line 28, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 50, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
   .aboutme .skillset img {
     height: 140px;
     padding: 20px;
   }
 
-  /* line 36, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
-  .project h1 {
-    font-size: 80px;
+  /* line 55, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
+  .projects h1 {
+    font-size: 70px;
+  }
+  /* line 58, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
+  .projects .container {
+    width: 90%;
+  }
+  /* line 60, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
+  .projects .container .item img {
+    margin-bottom: -10px;
+  }
+  /* line 63, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
+  .projects .container .item {
+    min-width: 99%;
+    padding-bottom: 60px;
+  }
+  /* line 68, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
+  .projects .container .description h2 {
+    font-size: 60px;
   }
 
-  /* line 39, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 33, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
   .connect {
     display: block;
   }
-  /* line 41, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 35, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
   .connect a {
     width: 100%;
     font-size: 54px;
   }
-  /* line 45, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 39, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
   .connect img {
     height: 80px;
     width: 80px;
     padding: 30px;
   }
-  /* line 50, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 44, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
   .connect #linkedin div, .connect #github div {
     width: 140px;
     height: 140px;
   }
+  /* line 48, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
+  .connect #github {
+    background-color: rgba(51, 204, 204, 0.7);
+  }
 
-  /* line 58, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 37, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/footer.css.scss */
   footer #section1 h1 {
     font-size: 90px;
   }
-  /* line 61, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 40, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/footer.css.scss */
   footer #section2 p {
     font-size: 4em;
   }
@@ -3157,22 +3314,22 @@ footer #section2 p {
 /* ----------- HTC One ----------- */
 /* Portrait and Landscape */
 @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
-  /* line 2, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 58, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
   p, ul {
     font-size: 2.5em;
   }
 
-  /* line 3, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 59, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
   .btn {
     font-size: 4em;
   }
 
-  /* line 6, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 35, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/banner.css.scss */
   .banner .photo {
     height: 1000px;
     background-position: center;
   }
-  /* line 10, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 39, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/banner.css.scss */
   .banner .text {
     height: 1000px;
     -webkit-box-pack: center;
@@ -3180,21 +3337,22 @@ footer #section2 p {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  /* line 13, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 42, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/banner.css.scss */
   .banner .text h1 {
     font-size: 7.5em;
   }
-  /* line 14, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 43, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/banner.css.scss */
   .banner .text h2 {
     font-size: 6em;
   }
 
-  /* line 19, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 40, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
   .aboutme .selfie {
     height: 400px;
+    width: 400px;
     margin-top: -200px;
   }
-  /* line 23, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 45, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
   .aboutme .skillset {
     display: -webkit-box;
     display: -webkit-flex;
@@ -3212,43 +3370,64 @@ footer #section2 p {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
   }
-  /* line 28, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 50, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
   .aboutme .skillset img {
     height: 140px;
     padding: 20px;
   }
 
-  /* line 36, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
-  .project h1 {
-    font-size: 80px;
+  /* line 55, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
+  .projects h1 {
+    font-size: 70px;
+  }
+  /* line 58, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
+  .projects .container {
+    width: 90%;
+  }
+  /* line 60, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
+  .projects .container .item img {
+    margin-bottom: -10px;
+  }
+  /* line 63, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
+  .projects .container .item {
+    min-width: 99%;
+    padding-bottom: 60px;
+  }
+  /* line 68, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
+  .projects .container .description h2 {
+    font-size: 60px;
   }
 
-  /* line 39, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 33, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
   .connect {
     display: block;
   }
-  /* line 41, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 35, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
   .connect a {
     width: 100%;
     font-size: 54px;
   }
-  /* line 45, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 39, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
   .connect img {
     height: 80px;
     width: 80px;
     padding: 30px;
   }
-  /* line 50, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 44, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
   .connect #linkedin div, .connect #github div {
     width: 140px;
     height: 140px;
   }
+  /* line 48, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
+  .connect #github {
+    background-color: rgba(51, 204, 204, 0.7);
+  }
 
-  /* line 58, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 37, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/footer.css.scss */
   footer #section1 h1 {
     font-size: 90px;
   }
-  /* line 61, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/phones.css.scss */
+  /* line 40, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/footer.css.scss */
   footer #section2 p {
     font-size: 4em;
   }

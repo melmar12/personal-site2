@@ -40,7 +40,8 @@ $(function () {
 	}
 	//inserting iFrames
 	insertiFrame('https://melmar12.github.io/star-field/','star-field','banner');
-	insertiFrame('https://melmar12.github.io/recursiveTree-p5js/','recursive-tree','connect');
+	insertiFrame('https://melmar12.github.io/gradient-p5js/.','cool-gradient','connect');
+	insertiFrame('https://melmar12.github.io/recursiveTree-p5js/','recursive-tree','footer');
 
 
 

@@ -7,12 +7,12 @@ body {
 $head: 'Roboto', sans-serif;
 $body: 'Nunito', sans-serif;
 
-$color1: #33cccc; //accent
-$color2: #cc6633; // light
-$color3: #660000; // dark
-@mixin rgba-color1($a) {background-color: rgba(51,204,204,$a);} // accent
-@mixin rgba-color2($a) {background-color: rgba(204,102,51,$a);} // light
-@mixin rgba-color3($a) {background-color: rgba(102,0,0,$a);} // dark
+$color1: #dc3c82; //accent
+$color2: #663c82; // light
+$color3: #003778; // dark
+@mixin rgba-color1($a) {background-color: rgba(220,60,130,$a);} // accent
+@mixin rgba-color2($a) {background-color: rgba(102,60,130,$a);} // light
+@mixin rgba-color3($a) {background-color: rgba(0,55,120,$a);} // dark
 $fadeSpeed: 900ms ease-in-out;
 
 $main-image: image-url("redrock.jpg");

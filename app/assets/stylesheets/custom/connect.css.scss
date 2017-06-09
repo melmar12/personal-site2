@@ -5,16 +5,17 @@
 	//background-image: $main-image;
 	background-size: cover;
 	background-position: center;
+
 	a {
 		@include flexbox-column;
 		width: 50%;
 		text-align: center;
 		color: white;
 		font-size: 30px;
-		padding: 40px 0px 40px 0px;
+		padding: 50px 0px 50px 0px;
 	}
-	#linkedin {@include rgba-color1(.5);}
-	#github {@include rgba-color1(.4);}
+	#linkedin {background-color: rgba(black, .3)}
+	#github {background-color: rgba(black, .4)}
 	img {
 		height: 40px;
 		width: 40px;

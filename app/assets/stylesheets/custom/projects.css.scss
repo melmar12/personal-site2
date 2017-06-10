@@ -23,7 +23,7 @@
 
     .item img {
       width: 100%;
-      margin-bottom: -5px;
+      display: block;
       opacity: .7;
       transition: $fadeSpeed;
       z-index: 9;

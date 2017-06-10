@@ -44,8 +44,4 @@ $(function () {
 	insertiFrame('https://melmar12.github.io/recursiveTree-p5js/','recursive-tree','footer');
 
 
-
-
-
-
 });

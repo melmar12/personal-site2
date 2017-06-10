@@ -20,22 +20,36 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
-    .item img {
-      width: 100%;
-      display: block;
-      opacity: .7;
-      transition: $fadeSpeed;
-      z-index: 9;
-    }
-    .item img:hover {
-      opacity: 1;
-    }
     .item {
       flex-grow: 1;
       width: 200px;
       min-width: 32%;
       padding: 3px;
+    }
+    a {display: block;position: relative;}
+    .img-overlay {
+      height: 100px;
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      z-index: 10;
+      opacity: .5;
+      top: 0;
+      @include rgba-color1(.99);
+      transition: $fadeSpeed;
+    }
+    .item img {
+      width: 100%;
+      display: block;
+      background-color: pink;
+      position: relative;
+      z-index: 9;
+      transition: $fadeSpeed;
+
+    }
+    .img-overlay:hover {
+      @include rgba-color1(0.0);
     }
     .description {
       h2 {

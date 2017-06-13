@@ -2,10 +2,10 @@ body {
     margin: 0;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,700);
-@import url(https://fonts.googleapis.com/css?family=Nunito:300,400,700);
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Teko:700|Roboto:300,700');
 $head: 'Roboto', sans-serif;
-$body: 'Nunito', sans-serif;
+$body: 'Montserrat', sans-serif;
+$special: 'Teko', sans-serif;
 
 $color1: #dc3c82; //accent
 $color2: #663c82; // light

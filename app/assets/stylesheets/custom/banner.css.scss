@@ -38,8 +38,10 @@
 @mixin banner-mobile {
 	.banner{
 		.photo {
+			background-image: $main-image;
 			height: 1000px;
 			background-position: center;
+			background-color: blue;
 		}
 		.text {
 			height: 1000px;

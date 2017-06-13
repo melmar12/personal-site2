@@ -33,6 +33,7 @@
 
 @mixin connect-mobile {
 	.connect {
+		background-image: $main-image;
 		display: block;
 		a {
 			width: 100%;

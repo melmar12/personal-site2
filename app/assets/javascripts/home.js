@@ -29,12 +29,13 @@ $(function () {
 		var x = document.createElement("IFRAME");
 		x.setAttribute("src", url);
 		x.style.display = "block"; // removes gap
-		x.style.position = 'relative';
+		x.style.position = "absolute";
 		x.style.zIndex = "-1";
 		x.style.width = "100%";
-		var sibHeight = document.getElementById(sibling).clientHeight.toString();
-		x.style.height = sibHeight + "px";
-		x.style.marginTop = "-" + sibHeight + "px";
+		// var sibHeight = document.getElementById(sibling).clientHeight.toString();
+		x.style.top = "0";
+		x.style.height = "100%";
+		// x.style.marginTop = "-" + sibHeight + "px";
 		x.style.border = "none";
 		document.getElementById(parent).appendChild(x);
 	}

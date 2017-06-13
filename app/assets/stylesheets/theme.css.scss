@@ -15,7 +15,7 @@ $color3: #003778; // dark
 @mixin rgba-color3($a) {background-color: rgba(0,55,120,$a);} // dark
 $fadeSpeed: 900ms ease-in-out;
 
-$main-image: image-url("redrock.jpg");
+$main-image: image-url("sky.jpg");
 
 h1, h2 {font-family: $head}
 p, ul {

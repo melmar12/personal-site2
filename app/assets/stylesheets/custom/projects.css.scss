@@ -33,8 +33,7 @@
       height: 100%;
       display: block;
       position: absolute;
-      z-index: 10;
-      opacity: .5;
+      z-index: 8;
       top: 0;
       @include rgba-color1(.99);
       transition: $fadeSpeed;
@@ -46,10 +45,13 @@
       position: relative;
       z-index: 9;
       transition: $fadeSpeed;
+      opacity: 0.3;
+      filter: grayscale(100%);
 
     }
-    .img-overlay:hover {
-      @include rgba-color1(0.0);
+    img:hover {
+      opacity: 1;
+      filter: grayscale(0%);
     }
     .description {
       h2 {
@@ -57,6 +59,7 @@
         font-size: 20px;
         line-height: 1px;
       }
+      position: relative;
       padding: 0px 0px;
       text-align: center;
       background-color: $color1;

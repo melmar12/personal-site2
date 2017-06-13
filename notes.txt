@@ -1,4 +1,5 @@
 personal notes
 - before pushing to heroku `rake assets:clean assets:precompile`
 
-- should probably delete stale branches... 
+- should probably delete stale branches...
+- update fonts

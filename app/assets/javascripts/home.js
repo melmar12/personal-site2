@@ -9,24 +9,16 @@ $(function () {
 
 	if (!isMobile) {
 		//Insert iFrames Function
-		function insertiFrame(url, parent, sibling) {
+		function insertiFrame(url, parentClass) {
 			var x = document.createElement("IFRAME");
 			x.setAttribute("src", url);
-			x.style.display = "block"; // removes gap
-			x.style.position = "absolute";
-			x.style.zIndex = "-1";
-			x.style.width = "100%";
-			// var sibHeight = document.getElementById(sibling).clientHeight.toString();
-			x.style.top = "0";
-			x.style.height = "100%";
-			// x.style.marginTop = "-" + sibHeight + "px";
-			x.style.border = "none";
-			document.getElementById(parent).appendChild(x);
-		}
+			x.setAttribute("class", 'iframe');
+			document.getElementById(parentClass).appendChild(x);
+	}
 		//inserting iFrames
-		insertiFrame('https://melmar12.github.io/star-field/','star-field','banner');
-		insertiFrame('https://melmar12.github.io/gradient-p5js/.','cool-gradient','connect');
-		insertiFrame('https://melmar12.github.io/recursiveTree-p5js/','recursive-tree','footer');
+		insertiFrame('https://melmar12.github.io/star-field/','star-field');
+		insertiFrame('https://melmar12.github.io/gradient-p5js/.','cool-gradient');
+		insertiFrame('https://melmar12.github.io/recursiveTree-p5js/','recursive-tree');
 
 		// // parralax scroll
 		// $(window).scroll(function () {

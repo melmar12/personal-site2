@@ -21,11 +21,10 @@ I'm most proud of my use of CSS/SASS in this project. The way I have organized m
 	<div class="module01"><h1>module 1</h1></div>
 	<div class="module02"><h1>module 1</h1></div>
 	<div class="module03"><h1>module 1</h1></div>
-	<footer><h1>footer</h1></footer>
 </body>
 ```
 
-my file structure simply looks like this. Most stylesheets are out of the way in the `custom/` folder.
+my file structure simply looks like this. Most stylesheets are out of sight in the `custom/` folder.
 ```
 > stylesheets
 	> custom
@@ -34,26 +33,26 @@ my file structure simply looks like this. Most stylesheets are out of the way in
 ```
 
 
-I use the application file soley for manifesting all stylesheets in the correct order to avoid overiding styles. This file also acts as a 'directory' of sorts because each file is named after its corresponding module.  
+I use the application file solely for manifesting all stylesheets in the correct order to avoid overriding styles. This file also acts as a 'directory' of sorts because each file is named after its corresponding module.  
 ```css
 /* application.css.scss */
 @import "theme.css.scss";
 @import "custom/module01.css.scss";
 @import "custom/module02.css.scss";
 @import "custom/module03.css.scss";
-@import "custom/footer.css.scss";
 @import "custom/mobile.css.scss";
 ```
 
-The theme file consist only of general styling, along with mixins and varriables to be used in other stylesheets. In this project, I have my theme file setup so I can easily change the overall theme colors and images in this single file. I tend to get bored of the same color scheme, so this is esential. 🤷🏻‍
+The theme file consist only of general styling, along with mixins and variables to be used in other stylesheets. In this project, I have my theme file setup so I can easily change the overall theme colors and images in this single file. I tend to get bored of the same color scheme, so this is essential. 🤷🏻‍
 ```css
 /* theme.css.scss */
+$color1: blue;
+$color2: cyan;
 * {
 	box-sizing: border-box;
 	margin: 0;
 }
-$color1: blue;
-div, footer {
+div {
     display: block;
     width: 100%;
     background-color: $color1;
@@ -72,7 +71,7 @@ Here's an example of a module's stylesheet. I take advantage of sass nesting so 
 }
 @mixin module01-mobile {
   .module01 {
-      background-color: $color1;
+      background-color: $color2;
     }    
 }
 ```
@@ -85,7 +84,6 @@ I then manifest all the responsive mixins into a single file, similarly to the a
     @mixin module01-mobile
     @mixin module02-mobile
     @mixin module03-mobile
-    @include footer-mobile;
 }
 /* ----- iPhone 6 ----- */
 @media only screen
@@ -96,9 +94,9 @@ I then manifest all the responsive mixins into a single file, similarly to the a
 }
 
 ```
-Overall, my goal with this setup is to isolate all styles to a single file per module, to avoid overiding styles in other modules, and to make modifiying styles more straightforward.   
+Overall, my goal with this setup is to isolate all styles to a single file per module, to avoid overriding styles in other modules, make debugging easier, and to make modifying styles more intuitive.   
 
 ### CSS vs Javascript
-When possible, I like to avoid using Javascript for styling my web pages. Perhaps it's because I like a good challenge. The 'Feature Projects' section of my website is my favorite because it is a vanilla html/css module with some cool features. The responsive gird is made with `flex-box` properties and also I created an image overlay hover effect. But thats just an illusion. There is no div overlaying the image. Instead I have a pink div behind the image, and I set the image to grayscale and lowered the opacity so the image itself is disolved into the pink div. This is backwards to what is visually happening.
+When possible, I like to avoid using Javascript for styling my web pages. Perhaps it's because I like a good challenge. The 'Feature Projects' section of my website is my favorite because it is a vanilla html/css module with some cool features(at least I think so). The responsive gird is made with `flex-box` properties. I also created an image overlay hover effect. But thats just an illusion. There is no div overlaying the image. Instead I have a pink div behind the image, and I set the image to grayscale and lowered the opacity so the image itself is dissolved into the pink div. This is backwards to what is visually happening.
 
-I save the javascript for the coolest effects. Right now, in the desktop view, I have a neat starfield animation and at the footer of my site and I have a cute little binary tree in the footer 🌲 These animaions are too cool for mobile devices, so I have images of pretty clouds to enjoy instead ☁️☁️  
+I save the javascript for the "coolest" effects. As of now, in the desktop view, I have a neat star-field animation and at the footer of my site and I have a cute little binary tree 🌲 I've recently discovered a js processing library, and I'm using my personal website to display some of my creations. These animations are too cool for mobile devices (translation; too many bugs), so I have images of pretty clouds to enjoy instead ☁️☁️ 📱  

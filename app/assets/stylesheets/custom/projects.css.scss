@@ -10,11 +10,11 @@
   background-color: rgba(black, .7);
   @include flexbox-column;
 
-  h1 {
+  h1, h3 {
     color: white;
-    font-size: 40px;
     opacity: .9;
   }
+  h1{font-size: 40px;}
   .container {
     width: 80%;
     display: flex;
@@ -67,6 +67,37 @@
       z-index: 10;
     }
   }
+  .more-projs {
+    h3 {
+      text-align: center;
+      padding-top: 20px;
+    }
+    width: 80%;
+    ul {
+      display: block;
+      margin: auto;
+      width: 40%;
+      list-style: none;
+    }
+    li {
+      padding: 5px 3px;
+      transition: background-color 1s;
+      box-sizing: border-box;
+      border-bottom: 1px solid rgba(black, 0.3);
+    }
+    a {
+      color: rgba(white, 0.3);
+      font-weight: lighter;
+      transition: 1s;
+    }
+    a:hover {color: white;}
+    li:hover {
+      border-left: 3px solid $color1;
+      border-bottom: none;
+      padding-left: 3px;
+      background-color: rgba(white, 0.05);
+    }
+  }
 }
 
 @mixin projects-mobile {
@@ -88,6 +119,9 @@
           font-size: 60px;
         }
       }
+    }
+    .more-projs {
+      ul {width:90%}
     }
   }
 }

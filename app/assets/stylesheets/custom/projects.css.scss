@@ -102,26 +102,21 @@
 
 @mixin projects-mobile {
   .projects {
-    h1 {
-      font-size: 70px;
-    }
+    h1, h3 {font-size: 70px}
     .container {
       width: 90%;
-      .item img {
-        margin-bottom: -10px;
-      }
+      .item img {margin-bottom: -10px}
       .item {
         min-width: 99%;
-        padding-bottom: 60px;
+        padding-bottom: 60px
       }
       .description {
-        h2 {
-          font-size: 60px;
-        }
+        h2 {font-size: 60px}
       }
     }
     .more-projs {
       ul {width:90%}
+      a {font-size: 60px}
     }
   }
 }

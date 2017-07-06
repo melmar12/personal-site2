@@ -80,9 +80,12 @@
 			width: 400px;
 			margin-top: -200px;
 		}
-		.skill img {
-			height: 140px;
-			padding: 20px;
+		.skillset .skill{
+			 img {
+				height: 140px;
+				padding: 20px;
+			}
+			span {font-size: 35px;}
 		}
 	}
 }

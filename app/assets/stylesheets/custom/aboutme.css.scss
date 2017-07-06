@@ -1,7 +1,7 @@
 .aboutme {
 	@include flexbox-column;
 	border-bottom: 1px solid #eee;
-	padding-bottom: 60px;
+	padding-bottom: 40px;
 	background-color: white;
 	.selfie-container {
 		position: relative;
@@ -30,38 +30,59 @@
 	.selfie-1:hover {
 		opacity: 0.0;
 	}
+	#profile-links p {
+		text-indent: 0px;
+		margin: 0px;
+	}
 	p {
-		max-width: 800px;
 		color: $color3;
 		text-indent: 30px;
 		line-height: 2;
 	}
-	.skillset img {
-		height: 60px;
-		padding: 10px;
+	.skillset {
+		border-top: 1px solid rgba(black, 0.1);
+		margin-bottom: 20px;
+		.container {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+		.skill {
+			display: block;
+			img {
+				height: 60px;
+				padding: 10px;
+			}
+			span {
+				font-size: smaller;
+				text-align: center;
+				color: rgba(black, 0.2);
+			}
+			img, span {
+				display: block;
+			}
+		}
 	}
-	#profile-links p {
-		text-indent: 0px;
-		margin: 0px;
+	h3 {
+		text-align: center;
+		span {
+			color: $color1;
+		}
 	}
 }
 
 @mixin aboutme-mobile {
 	.aboutme {
+		h3, span {font-size: 50px;}
 		.selfie {
 			height: 400px;
 			width: 400px;
 			margin-top: -200px;
 		}
-		.skillset {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			flex-wrap: wrap;
-			img {
-				height: 140px;
-				padding: 20px;
-			}
+		.skill img {
+			height: 140px;
+			padding: 20px;
 		}
 	}
 }

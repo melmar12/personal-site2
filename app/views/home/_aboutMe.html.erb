@@ -1,4 +1,5 @@
 <section class="aboutme">
+
 	<div class="selfie-container">
 		<div class="selfie selfie-1"></div>
 		<div class="selfie selfie-copy"></div>
@@ -6,23 +7,39 @@
 	<div id="profile-links">
 		<p>
 			<a href="https://www.linkedin.com/in/melissa-martinez-b3599290"><%= fa_icon "linkedin" %></a> |
-			<a href="https://github.com/melmar12"><%= fa_icon "github-alt" %></a>
+			<a href="https://github.com/melmar12"><%= fa_icon "github-alt" %></a> |
+			<a href="#footer"><%= fa_icon "envelope" %></a>
 		</p>
 	</div>
+	<div class="module-container">
 
-	<p>I'm Melissa, a Web Developer from in Houston, Texas. I recently graduated from the University of Houston with a degree in <a href="http://www.bauer.uh.edu/undergraduate/mis/index.php">Management Information Systems</a>. I'm currently available for fulltime work and seeking developer positions. If you're looking for someone to join your team or some help on your next project, feel free to contact me and we can chat!</p>
+		<p>I'm Melissa, a Web Developer and wannabe yogi based in Houston, Texas. I recently graduated from the University of Houston with a degree in <a href="http://www.bauer.uh.edu/undergraduate/mis/index.php">Management Information Systems</a>. I'm available for fulltime work and seeking a developer position where I can utilizie my frontend and javascript skillset, I'm also open to relocation 🚀  If you're looking for someone to join your team or for some help on your next project, feel free to contact me and we can chat!</p>
 
-	<div class="skillset">
-		<%= image_tag "html5.png" %>
-		<%= image_tag "css3.svg" %>
-		<%= image_tag "sass.svg" %>
-		<%= image_tag "js.png" %>
-		<%= image_tag "react.svg" %>
-		<%= image_tag "git.png" %>
-		<%= image_tag "java.svg" %>
-		<%= image_tag "db.png" %>
-		<%= image_tag "ruby.png" %>
-		<%= image_tag "rails.png" %>
+		<div class="skillset">
+			<h3>What I <span>Know</span></h3>
+			<div class="container">
+				<div class="skill"><%= image_tag "html5.png" %><span>HTML5</span></div>
+				<div class="skill"><%= image_tag "css3.svg" %><span>CSS3</span></div>
+				<div class="skill"><%= image_tag "sass.svg" %><span>SASS</span></div>
+				<div class="skill"><%= image_tag "js.png" %><span>JavaScript</span></div>
+				<div class="skill"><%= image_tag "node.png" %><span>Node</span></div>
+				<div class="skill"><%= image_tag "react.svg" %><span>React</span></div>
+				<div class="skill"><%= image_tag "git.png" %><span>git</span></div>
+				<div class="skill"><%= image_tag "java.svg" %><span>Java</span></div>
+				<div class="skill"><%= image_tag "db.png" %><span>SQL</span></div>
+				<div class="skill"><%= image_tag "ruby.png" %><span>Ruby</span></div>
+				<div class="skill"><%= image_tag "rails.png" %><span>Rails</span></div>
+				<div class="skill"><%= image_tag "aws.png" %><span>AWS</span></div>
+			</div>
+		</div>
+
+		<div class="skillset">
+			<h3>What I'm <span>Learning</span></h3>
+			<div class="container">
+				<div class="skill"><%= image_tag "redux.png" %><span>Redux</span></div>
+				<div class="skill"><%= image_tag "webpack.png" %><span>webpack</span></div>
+				<div class="skill"><%= image_tag "d3.png" %><span>d3.js</span></div>
+			</div>
+		</div>
 	</div>
-
 </section>

@@ -16,7 +16,7 @@ $(function () {
 			document.getElementById(parentClass).appendChild(x);
 	}
 		//inserting iFrames
-		insertiFrame('https://melmar12.github.io/star-field/','star-field');
+		insertiFrame('https://melmar12.github.io/sierpinski-triangle-p5js/','star-field');
 		insertiFrame('https://melmar12.github.io/gradient-p5js/.','cool-gradient');
 		insertiFrame('https://melmar12.github.io/recursiveTree-p5js/','recursive-tree');
 

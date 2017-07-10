@@ -2112,7 +2112,7 @@ h1, h2, h3 {
 }
 
 /* line 21, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
-p, ul {
+p, ul, span {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
 }
@@ -2120,7 +2120,7 @@ p, ul {
 /* line 25, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
 a {
   text-decoration: none;
-  color: #663c82;
+  color: #9e78f8;
   font-weight: 700;
   -webkit-transition: 900ms ease-in-out;
   transition: 900ms ease-in-out;
@@ -2128,16 +2128,22 @@ a {
 
 /* line 31, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
 a:hover {
-  color: #dc3c82;
+  color: #9efff8;
 }
 
 /* line 32, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
+.module-container {
+  width: 70%;
+  padding: 20px;
+}
+
+/* line 36, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
 .btn {
   box-sizing: border-box;
-  border: 5px solid #663c82;
+  border: 5px solid #9e78f8;
   padding: 2px 8px 2px 8px;
   min-width: 100px;
-  background-color: #663c82;
+  background-color: #9e78f8;
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -2147,14 +2153,14 @@ a:hover {
   transition: 900ms ease-in-out;
 }
 
-/* line 45, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
+/* line 49, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
 .btn:hover {
   background-color: white;
-  color: #dc3c82;
-  border-color: #dc3c82;
+  color: #9efff8;
+  border-color: #9efff8;
 }
 
-/* line 50, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
+/* line 54, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
 .iframe {
   display: block;
   position: absolute;
@@ -2205,14 +2211,14 @@ a:hover {
 /* line 24, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/banner.css.scss */
 .banner .text h1 {
   font-family: "Teko", sans-serif;
-  text-shadow: 7px 0px 0 #003778, 8px 0px 0 #003778;
+  text-shadow: 7px 0px 0 #462d7f, 8px 0px 0 #462d7f;
   font-size: 150px;
   padding: 0px;
 }
 /* line 30, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/banner.css.scss */
 .banner .text h2 {
   font-family: "Montserrat", sans-serif;
-  text-shadow: 5px 0px 0 #003778, 6px 0px 0 #003778;
+  text-shadow: 5px 0px 0 #462d7f, 6px 0px 0 #462d7f;
   font-size: 40px;
 }
 
@@ -2232,7 +2238,7 @@ a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   border-bottom: 1px solid #eee;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   background-color: white;
 }
 /* line 6, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
@@ -2268,21 +2274,66 @@ a:hover {
   opacity: 0.0;
 }
 /* line 33, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
-.aboutme p {
-  max-width: 800px;
-  color: #003778;
-  text-indent: 30px;
-  line-height: 2;
-}
-/* line 39, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
-.aboutme .skillset img {
-  height: 60px;
-  padding: 10px;
-}
-/* line 43, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
 .aboutme #profile-links p {
   text-indent: 0px;
   margin: 0px;
+}
+/* line 37, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+.aboutme p {
+  color: #462d7f;
+  text-indent: 30px;
+  line-height: 2;
+}
+/* line 42, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+.aboutme .skillset {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+/* line 45, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+.aboutme .skillset .container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+/* line 51, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+.aboutme .skillset .skill {
+  display: block;
+}
+/* line 53, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+.aboutme .skillset .skill img {
+  height: 60px;
+  padding: 10px;
+}
+/* line 57, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+.aboutme .skillset .skill span {
+  font-size: smaller;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.2);
+}
+/* line 62, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+.aboutme .skillset .skill img, .aboutme .skillset .skill span {
+  display: block;
+}
+/* line 67, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+.aboutme h3 {
+  text-align: center;
+}
+/* line 69, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+.aboutme h3 span {
+  color: #9e78f8;
 }
 
 /* line 1, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
@@ -2361,7 +2412,7 @@ a:hover {
   position: absolute;
   z-index: 8;
   top: 0;
-  background-color: rgba(220, 60, 130, 0.99);
+  background-color: rgba(158, 120, 248, 0.99);
   -webkit-transition: 900ms ease-in-out;
   transition: 900ms ease-in-out;
 }
@@ -2389,7 +2440,7 @@ a:hover {
   position: relative;
   padding: 0px 0px;
   text-align: center;
-  background-color: #dc3c82;
+  background-color: #9e78f8;
   border: 7px solid rgba(0, 0, 0, 0.05);
   z-index: 10;
 }
@@ -2436,7 +2487,7 @@ a:hover {
 }
 /* line 94, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
 .projects .more-projs li:hover {
-  border-left: 3px solid #dc3c82;
+  border-left: 3px solid #9e78f8;
   border-bottom: none;
   padding-left: 3px;
   background-color: rgba(255, 255, 255, 0.05);
@@ -2449,10 +2500,12 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  background: -webkit-linear-gradient(#9efff8, #9e78f8);
+  background: linear-gradient(#9efff8, #9e78f8);
   background-size: cover;
   background-position: center;
 }
-/* line 9, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
+/* line 10, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
 .connect a {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2473,13 +2526,9 @@ a:hover {
   font-size: 30px;
   padding: 50px 0px 50px 0px;
 }
-/* line 17, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
-.connect #linkedin {
-  background-color: rgba(0, 0, 0, 0.3);
-}
 /* line 18, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
 .connect #github {
-  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: inset 7px 0px 20px -7px rgba(0, 0, 0, 0.05);
 }
 /* line 19, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
 .connect img {
@@ -2527,7 +2576,7 @@ footer a {
 }
 /* line 8, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/footer.css.scss */
 footer a:hover {
-  color: #dc3c82;
+  color: #9efff8;
 }
 /* line 9, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/footer.css.scss */
 footer div {
@@ -2562,14 +2611,19 @@ footer #section2 p {
 /* ~******~ Media Queries ~******~ */
 /* ----------- iPhone 6 ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 67, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
+  /* line 71, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
   p, ul {
     font-size: 2.5em;
   }
 
-  /* line 68, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
+  /* line 72, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
   .btn {
     font-size: 4em;
+  }
+
+  /* line 73, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
+  .module-container {
+    width: 80%;
   }
 
   /* line 40, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/banner.css.scss */
@@ -2596,34 +2650,24 @@ footer #section2 p {
     font-size: 6em;
   }
 
-  /* line 51, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+  /* line 77, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+  .aboutme h3, .aboutme span {
+    font-size: 50px;
+  }
+  /* line 78, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
   .aboutme .selfie {
     height: 400px;
     width: 400px;
     margin-top: -200px;
   }
-  /* line 56, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
-  .aboutme .skillset {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-  }
-  /* line 61, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
-  .aboutme .skillset img {
+  /* line 84, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+  .aboutme .skillset .skill img {
     height: 140px;
     padding: 20px;
+  }
+  /* line 88, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+  .aboutme .skillset .skill span {
+    font-size: 35px;
   }
 
   /* line 105, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
@@ -2678,17 +2722,13 @@ footer #section2 p {
     height: 140px;
   }
   /* line 51, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
-  .connect #linkedin {
-    background-color: rgba(255, 255, 255, 0);
-  }
-  /* line 52, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
   .connect #github {
-    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0px 70px 80px -30px rgba(0, 0, 0, 0.03);
   }
 
   /* line 35, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/footer.css.scss */
   footer {
-    background-color: #003778;
+    background-color: #462d7f;
   }
   /* line 38, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/footer.css.scss */
   footer #section1 h1 {
@@ -2702,14 +2742,19 @@ footer #section2 p {
 /* ----------- iPhone 6+ ----------- */
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
-  /* line 67, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
+  /* line 71, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
   p, ul {
     font-size: 2.5em;
   }
 
-  /* line 68, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
+  /* line 72, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
   .btn {
     font-size: 4em;
+  }
+
+  /* line 73, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
+  .module-container {
+    width: 80%;
   }
 
   /* line 40, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/banner.css.scss */
@@ -2736,34 +2781,24 @@ footer #section2 p {
     font-size: 6em;
   }
 
-  /* line 51, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+  /* line 77, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+  .aboutme h3, .aboutme span {
+    font-size: 50px;
+  }
+  /* line 78, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
   .aboutme .selfie {
     height: 400px;
     width: 400px;
     margin-top: -200px;
   }
-  /* line 56, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
-  .aboutme .skillset {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-  }
-  /* line 61, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
-  .aboutme .skillset img {
+  /* line 84, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+  .aboutme .skillset .skill img {
     height: 140px;
     padding: 20px;
+  }
+  /* line 88, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+  .aboutme .skillset .skill span {
+    font-size: 35px;
   }
 
   /* line 105, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
@@ -2818,17 +2853,13 @@ footer #section2 p {
     height: 140px;
   }
   /* line 51, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
-  .connect #linkedin {
-    background-color: rgba(255, 255, 255, 0);
-  }
-  /* line 52, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
   .connect #github {
-    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0px 70px 80px -30px rgba(0, 0, 0, 0.03);
   }
 
   /* line 35, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/footer.css.scss */
   footer {
-    background-color: #003778;
+    background-color: #462d7f;
   }
   /* line 38, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/footer.css.scss */
   footer #section1 h1 {
@@ -2842,14 +2873,19 @@ footer #section2 p {
 /* ----------- iPhone 5 and 5S ----------- */
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 67, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
+  /* line 71, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
   p, ul {
     font-size: 2.5em;
   }
 
-  /* line 68, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
+  /* line 72, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
   .btn {
     font-size: 4em;
+  }
+
+  /* line 73, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
+  .module-container {
+    width: 80%;
   }
 
   /* line 40, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/banner.css.scss */
@@ -2876,34 +2912,24 @@ footer #section2 p {
     font-size: 6em;
   }
 
-  /* line 51, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+  /* line 77, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+  .aboutme h3, .aboutme span {
+    font-size: 50px;
+  }
+  /* line 78, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
   .aboutme .selfie {
     height: 400px;
     width: 400px;
     margin-top: -200px;
   }
-  /* line 56, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
-  .aboutme .skillset {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-  }
-  /* line 61, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
-  .aboutme .skillset img {
+  /* line 84, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+  .aboutme .skillset .skill img {
     height: 140px;
     padding: 20px;
+  }
+  /* line 88, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+  .aboutme .skillset .skill span {
+    font-size: 35px;
   }
 
   /* line 105, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
@@ -2958,17 +2984,13 @@ footer #section2 p {
     height: 140px;
   }
   /* line 51, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
-  .connect #linkedin {
-    background-color: rgba(255, 255, 255, 0);
-  }
-  /* line 52, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
   .connect #github {
-    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0px 70px 80px -30px rgba(0, 0, 0, 0.03);
   }
 
   /* line 35, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/footer.css.scss */
   footer {
-    background-color: #003778;
+    background-color: #462d7f;
   }
   /* line 38, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/footer.css.scss */
   footer #section1 h1 {
@@ -2982,14 +3004,19 @@ footer #section2 p {
 /* ----------- iPhone 4 and 4S ----------- */
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 67, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
+  /* line 71, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
   p, ul {
     font-size: 2.5em;
   }
 
-  /* line 68, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
+  /* line 72, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
   .btn {
     font-size: 4em;
+  }
+
+  /* line 73, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
+  .module-container {
+    width: 80%;
   }
 
   /* line 40, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/banner.css.scss */
@@ -3016,34 +3043,24 @@ footer #section2 p {
     font-size: 6em;
   }
 
-  /* line 51, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+  /* line 77, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+  .aboutme h3, .aboutme span {
+    font-size: 50px;
+  }
+  /* line 78, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
   .aboutme .selfie {
     height: 400px;
     width: 400px;
     margin-top: -200px;
   }
-  /* line 56, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
-  .aboutme .skillset {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-  }
-  /* line 61, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
-  .aboutme .skillset img {
+  /* line 84, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+  .aboutme .skillset .skill img {
     height: 140px;
     padding: 20px;
+  }
+  /* line 88, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+  .aboutme .skillset .skill span {
+    font-size: 35px;
   }
 
   /* line 105, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
@@ -3098,17 +3115,13 @@ footer #section2 p {
     height: 140px;
   }
   /* line 51, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
-  .connect #linkedin {
-    background-color: rgba(255, 255, 255, 0);
-  }
-  /* line 52, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
   .connect #github {
-    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0px 70px 80px -30px rgba(0, 0, 0, 0.03);
   }
 
   /* line 35, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/footer.css.scss */
   footer {
-    background-color: #003778;
+    background-color: #462d7f;
   }
   /* line 38, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/footer.css.scss */
   footer #section1 h1 {
@@ -3122,14 +3135,19 @@ footer #section2 p {
 /* ----------- Galaxy S5 ----------- */
 /* Portrait and Landscape */
 @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
-  /* line 67, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
+  /* line 71, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
   p, ul {
     font-size: 2.5em;
   }
 
-  /* line 68, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
+  /* line 72, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
   .btn {
     font-size: 4em;
+  }
+
+  /* line 73, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
+  .module-container {
+    width: 80%;
   }
 
   /* line 40, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/banner.css.scss */
@@ -3156,34 +3174,24 @@ footer #section2 p {
     font-size: 6em;
   }
 
-  /* line 51, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+  /* line 77, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+  .aboutme h3, .aboutme span {
+    font-size: 50px;
+  }
+  /* line 78, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
   .aboutme .selfie {
     height: 400px;
     width: 400px;
     margin-top: -200px;
   }
-  /* line 56, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
-  .aboutme .skillset {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-  }
-  /* line 61, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
-  .aboutme .skillset img {
+  /* line 84, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+  .aboutme .skillset .skill img {
     height: 140px;
     padding: 20px;
+  }
+  /* line 88, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+  .aboutme .skillset .skill span {
+    font-size: 35px;
   }
 
   /* line 105, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
@@ -3238,17 +3246,13 @@ footer #section2 p {
     height: 140px;
   }
   /* line 51, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
-  .connect #linkedin {
-    background-color: rgba(255, 255, 255, 0);
-  }
-  /* line 52, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
   .connect #github {
-    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0px 70px 80px -30px rgba(0, 0, 0, 0.03);
   }
 
   /* line 35, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/footer.css.scss */
   footer {
-    background-color: #003778;
+    background-color: #462d7f;
   }
   /* line 38, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/footer.css.scss */
   footer #section1 h1 {
@@ -3262,14 +3266,19 @@ footer #section2 p {
 /* ----------- Galaxy S4 ----------- */
 /* Portrait and Landscape */
 @media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
-  /* line 67, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
+  /* line 71, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
   p, ul {
     font-size: 2.5em;
   }
 
-  /* line 68, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
+  /* line 72, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
   .btn {
     font-size: 4em;
+  }
+
+  /* line 73, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
+  .module-container {
+    width: 80%;
   }
 
   /* line 40, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/banner.css.scss */
@@ -3296,34 +3305,24 @@ footer #section2 p {
     font-size: 6em;
   }
 
-  /* line 51, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+  /* line 77, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+  .aboutme h3, .aboutme span {
+    font-size: 50px;
+  }
+  /* line 78, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
   .aboutme .selfie {
     height: 400px;
     width: 400px;
     margin-top: -200px;
   }
-  /* line 56, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
-  .aboutme .skillset {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-  }
-  /* line 61, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
-  .aboutme .skillset img {
+  /* line 84, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+  .aboutme .skillset .skill img {
     height: 140px;
     padding: 20px;
+  }
+  /* line 88, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+  .aboutme .skillset .skill span {
+    font-size: 35px;
   }
 
   /* line 105, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
@@ -3378,17 +3377,13 @@ footer #section2 p {
     height: 140px;
   }
   /* line 51, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
-  .connect #linkedin {
-    background-color: rgba(255, 255, 255, 0);
-  }
-  /* line 52, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
   .connect #github {
-    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0px 70px 80px -30px rgba(0, 0, 0, 0.03);
   }
 
   /* line 35, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/footer.css.scss */
   footer {
-    background-color: #003778;
+    background-color: #462d7f;
   }
   /* line 38, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/footer.css.scss */
   footer #section1 h1 {
@@ -3402,14 +3397,19 @@ footer #section2 p {
 /* ----------- Galaxy S3 ----------- */
 /* Portrait and Landscape */
 @media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) {
-  /* line 67, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
+  /* line 71, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
   p, ul {
     font-size: 2.5em;
   }
 
-  /* line 68, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
+  /* line 72, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
   .btn {
     font-size: 4em;
+  }
+
+  /* line 73, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
+  .module-container {
+    width: 80%;
   }
 
   /* line 40, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/banner.css.scss */
@@ -3436,34 +3436,24 @@ footer #section2 p {
     font-size: 6em;
   }
 
-  /* line 51, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+  /* line 77, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+  .aboutme h3, .aboutme span {
+    font-size: 50px;
+  }
+  /* line 78, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
   .aboutme .selfie {
     height: 400px;
     width: 400px;
     margin-top: -200px;
   }
-  /* line 56, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
-  .aboutme .skillset {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-  }
-  /* line 61, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
-  .aboutme .skillset img {
+  /* line 84, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+  .aboutme .skillset .skill img {
     height: 140px;
     padding: 20px;
+  }
+  /* line 88, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+  .aboutme .skillset .skill span {
+    font-size: 35px;
   }
 
   /* line 105, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
@@ -3518,17 +3508,13 @@ footer #section2 p {
     height: 140px;
   }
   /* line 51, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
-  .connect #linkedin {
-    background-color: rgba(255, 255, 255, 0);
-  }
-  /* line 52, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
   .connect #github {
-    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0px 70px 80px -30px rgba(0, 0, 0, 0.03);
   }
 
   /* line 35, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/footer.css.scss */
   footer {
-    background-color: #003778;
+    background-color: #462d7f;
   }
   /* line 38, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/footer.css.scss */
   footer #section1 h1 {
@@ -3542,14 +3528,19 @@ footer #section2 p {
 /* ----------- HTC One ----------- */
 /* Portrait and Landscape */
 @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
-  /* line 67, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
+  /* line 71, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
   p, ul {
     font-size: 2.5em;
   }
 
-  /* line 68, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
+  /* line 72, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
   .btn {
     font-size: 4em;
+  }
+
+  /* line 73, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/theme.css.scss */
+  .module-container {
+    width: 80%;
   }
 
   /* line 40, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/banner.css.scss */
@@ -3576,34 +3567,24 @@ footer #section2 p {
     font-size: 6em;
   }
 
-  /* line 51, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+  /* line 77, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+  .aboutme h3, .aboutme span {
+    font-size: 50px;
+  }
+  /* line 78, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
   .aboutme .selfie {
     height: 400px;
     width: 400px;
     margin-top: -200px;
   }
-  /* line 56, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
-  .aboutme .skillset {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-  }
-  /* line 61, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
-  .aboutme .skillset img {
+  /* line 84, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+  .aboutme .skillset .skill img {
     height: 140px;
     padding: 20px;
+  }
+  /* line 88, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/aboutme.css.scss */
+  .aboutme .skillset .skill span {
+    font-size: 35px;
   }
 
   /* line 105, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/projects.css.scss */
@@ -3658,17 +3639,13 @@ footer #section2 p {
     height: 140px;
   }
   /* line 51, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
-  .connect #linkedin {
-    background-color: rgba(255, 255, 255, 0);
-  }
-  /* line 52, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/connect.css.scss */
   .connect #github {
-    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0px 70px 80px -30px rgba(0, 0, 0, 0.03);
   }
 
   /* line 35, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/footer.css.scss */
   footer {
-    background-color: #003778;
+    background-color: #462d7f;
   }
   /* line 38, /Users/Melissa/Code/personal-site2/app/assets/stylesheets/custom/footer.css.scss */
   footer #section1 h1 {

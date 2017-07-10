@@ -7,12 +7,12 @@ $head: 'Roboto', sans-serif;
 $body: 'Montserrat', sans-serif;
 $special: 'Teko', sans-serif;
 
-$color1: #dc3c82; //accent
-$color2: #663c82; // light
-$color3: #003778; // dark
-@mixin rgba-color1($a) {background-color: rgba(220,60,130,$a);} // accent
-@mixin rgba-color2($a) {background-color: rgba(102,60,130,$a);} // light
-@mixin rgba-color3($a) {background-color: rgba(0,55,120,$a);} // dark
+$color1: #9efff8; //accent
+$color2: #9e78f8; // light
+$color3: #462d7f; // dark
+@mixin rgba-color1($a) {background-color: rgba(158,255,248,$a);} // accent
+@mixin rgba-color2($a) {background-color: rgba(158,120,248,$a);} // light
+@mixin rgba-color3($a) {background-color: rgba(70, 45, 127,$a);} // dark
 $fadeSpeed: 900ms ease-in-out;
 
 $main-image: image-url("sky.jpg");

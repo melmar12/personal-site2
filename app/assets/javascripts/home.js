@@ -17,7 +17,6 @@ $(function () {
 	}
 		//inserting iFrames
 		insertiFrame('https://melmar12.github.io/sierpinski-triangle-p5js/','star-field');
-		insertiFrame('https://melmar12.github.io/gradient-p5js/.','cool-gradient');
 		insertiFrame('https://melmar12.github.io/recursiveTree-p5js/','recursive-tree');
 
 		// // parralax scroll

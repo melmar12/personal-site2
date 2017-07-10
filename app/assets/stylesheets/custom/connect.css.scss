@@ -3,6 +3,7 @@
 	width: 100%;
 	//leaving in case I revert back to using bg images
 	//background-image: $main-image;
+	background: linear-gradient($color1, $color2);
 	background-size: cover;
 	background-position: center;
 
@@ -14,8 +15,7 @@
 		font-size: 30px;
 		padding: 50px 0px 50px 0px;
 	}
-	#linkedin {background-color: rgba(black, .3)}
-	#github {background-color: rgba(black, .4)}
+	#github {box-shadow: inset 7px 0px 20px -7px rgba(black, 0.05)}
 	img {
 		height: 40px;
 		width: 40px;
@@ -48,7 +48,6 @@
 			width: 140px;
 			height: 140px;
 		}
-		#linkedin {background-color: rgba(white, 0);}
-		#github {background-color: rgba(white, .3);}
+		#github {box-shadow: inset 0px 70px 80px -30px rgba(black, 0.03)}
 	}
 }

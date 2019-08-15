@@ -21,7 +21,7 @@
 		background-position: center;
 		transition: $fadeSpeed;
 	}
-	.selfie-copy {
+/*	.selfie-copy {
 		position: absolute;
 		top: 0;
 		z-index: 1;
@@ -29,7 +29,7 @@
 	}
 	.selfie-1:hover {
 		opacity: 0.0;
-	}
+	}*/
 	#profile-links p {
 		text-indent: 0px;
 		margin: 0px;
@@ -51,7 +51,7 @@
 		.skill {
 			display: block;
 			img {
-				height: 60px;
+				height: 40px;
 				padding: 10px;
 			}
 			span {
@@ -65,6 +65,7 @@
 		}
 	}
 	h3 {
+		font-weight: normal;
 		text-align: center;
 		span {
 			color: $color2;

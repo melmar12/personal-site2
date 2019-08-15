@@ -26,47 +26,54 @@
       min-width: 32%;
       padding: 3px;
     }
-    a {display: block;position: relative;}
-    .img-overlay {
-      height: 100px;
-      width: 100%;
-      height: 100%;
-      display: block;
-      position: absolute;
-      z-index: 8;
-      top: 0;
-      @include rgba-color2(.99);
-      transition: $fadeSpeed;
-    }
-    .item img {
-      width: 100%;
-      display: block;
-      background-color: pink;
-      position: relative;
-      z-index: 9;
-      transition: $fadeSpeed;
-      opacity: 0.3;
-      filter: grayscale(100%);
 
-    }
-    img:hover {
-      opacity: 1;
-      filter: grayscale(0%);
-    }
     .description {
+      box-sizing: border-box;
+      height: 100%;
+      position: relative;
+      padding: 20px;
+      padding-bottom: 0px;
+      color: rgba(white, .8);
+      font-weight: 100;
+      background-color: $color2;
+      border: 3px solid rgba(black, .05);
+      z-index: 10;
       h2 {
+        font-family: $special;
         color: rgba(white, .8);
         font-size: 20px;
         line-height: 1px;
       }
-      position: relative;
-      padding: 0px 0px;
-      text-align: center;
-      background-color: $color2;
-      border: 7px solid rgba(black, .05);
-      z-index: 10;
+      .icons {overflow: auto;}
+      i {color: rgba(white, .6);}
+      .main-icon {
+        font-size: 50px;
+        float: left;
+      }
+      .sub-icon {
+        float: right;
+        font-size: 20px
+      }
+      .sub-icon .fa:hover{color: white;}
+      ul {padding-left: 15px;}
+      li {
+        font-size: 15px;
+        padding-top: 10px;
+      }
+      .fa-li {
+        left: -1.6em;
+        top: 0.5em;
+      }
+      .tech-used li {
+        font-family: $special;
+        color: rgba(black, .4);
+        display: inline;
+        padding: 0px;
+      }
     }
   }
+
+
   .more-projs {
     h3 {
       text-align: center;

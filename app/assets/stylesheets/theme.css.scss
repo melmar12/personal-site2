@@ -2,10 +2,12 @@ body {
     margin: 0;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Teko:700|Roboto:300,700');
+// @import url('https://fonts.googleapis.com/css?family=Montserrat|Teko:700|Roboto:300,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100,300&display=swap');
+
 $head: 'Roboto', sans-serif;
-$body: 'Montserrat', sans-serif;
-$special: 'Teko', sans-serif;
+$body: 'Roberto', sans-serif;
+$special: 'Roboto Mono';
 
 $color1: #9efff8; //accent
 $color2: #9e78f8; // light
@@ -30,7 +32,7 @@ a {
 }
 a:hover {color: $color1}
 .module-container {
-  width: 70%;
+  width: 60%;
   padding: 20px;
 }
 .btn {

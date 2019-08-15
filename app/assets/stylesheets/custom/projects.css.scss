@@ -23,7 +23,7 @@
     .item {
       flex-grow: 1;
       width: 200px;
-      min-width: 32%;
+      min-width: 49%;
       padding: 3px;
     }
 
@@ -40,9 +40,10 @@
       z-index: 10;
       h2 {
         font-family: $special;
+        font-weight: 300;
         color: rgba(white, .8);
         font-size: 20px;
-        line-height: 1px;
+        line-height: 1;
       }
       .icons {overflow: auto;}
       i {color: rgba(white, .6);}
@@ -71,9 +72,25 @@
         padding: 0px;
       }
     }
+
+    .more-projs-link {
+      h2 {align-self: center}
+    }
   }
 
 
+  div.description.more-projs-link {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    a {font-weight: 300; color: rgba(white, .8);}
+    a:hover {
+      color: white;
+      font-weight: 700;
+    }
+  }
+
+  /*
   .more-projs {
     h3 {
       text-align: center;
@@ -104,7 +121,9 @@
       padding-left: 3px;
       background-color: rgba(white, 0.05);
     }
-  }
+  } */
+
+
 }
 
 @mixin projects-mobile {
@@ -119,11 +138,22 @@
       }
       .description {
         h2 {font-size: 60px}
+        .fa-file-code-o:before{font-size: 3em;} // main-icon
+        .sub-icon{font-size: 6em;}
+        span.fa-li {
+          font-size: 2em;
+          top: -0.2em;
+        }
+        li {
+          font-size: 1em;
+          padding: 30px;
+        }
       }
     }
+    /*
     .more-projs {
       ul {width:90%}
       a {font-size: 60px}
-    }
+    }*/
   }
 }

@@ -1,2 +1,26 @@
-personal notes
+https://guides.rubyonrails.org/upgrading_ruby_on_rails.html
+
+// goal: 'rails', '6.0.0' ruby "2.7.1"
+
+// Rails 6 requires Ruby 2.5.0 or newer.
+// Rails 5 requires Ruby 2.2.2 or newer
+
+
+ruby -v
+rvm list known
+rvm install 2.5.8
+rvm use 2.5.8 --default
+gem install bundler
+
+bundle update // until no errors/warnings
+
+
+`app:update` command (`rake rails:update` on 4.2 and earlier)
+
+//gem install
+// gem update
+
+rails server
+
+
 - before pushing to heroku `rake assets:clean assets:precompile`

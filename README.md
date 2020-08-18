@@ -1,6 +1,6 @@
 # My Portfolio Website
 
-visit live site [here](http://melissamartinez.dev)
+visit live site [here](https://www.melissamartinez.dev)
 
 ***Tools Used:***
 -	HTML, SASS, Javascript
